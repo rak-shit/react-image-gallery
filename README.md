@@ -66,3 +66,27 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Firebase Configuration
+
+In the project directory, you can run: 
+
+### `npm i firebase` <br />
+
+Go to : https://firebase.google.com/ and sign-in using your google account. Click on 'Go to console' on the top right corner.  <br />
+
+Click on add a new project and create a new project in firebase. Then go to the project settings. Scroll down to the App section and replace the `const firebaseConfig` in 'src/firebase/index.js' with the below shown code.
+
+![Configuration Setup](https://github.com/rak-shit/react-image-gallery/blob/master/Screenshot%202019-12-14%20at%201.17.52%20PM.png)
+
+After fiishing the above step, click on the 'Database' option on the left side of the window. Then scroll down to the section of Realtime Database and the click on create database. Enable it in test mode to add data into your database. This will configure your firebase Realtime Database settings.
+
+Then to add images into the firebase cloud storage, we need to click on the storage option on the left side of the window. Then go to the rules section of the storage database and make the required changes to make sure the rules of the storage database looks like below : 
+
+![Storage Database Configuration](https://github.com/rak-shit/react-image-gallery/blob/master/Screenshot%202019-12-14%20at%201.17.14%20PM.png)
+
+### To run project go to the project directory and run `npm start`.
+
+The App looks like below :
+
+![Notes App](https://github.com/rak-shit/react-image-gallery/blob/master/Screenshot%202019-12-14%20at%201.16.32%20PM.png)
